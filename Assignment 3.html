@@ -1,0 +1,78 @@
+<html>
+<head>
+<title>Assignment 3</title>
+</head>
+
+
+<body style="font-family: Microsoft Sans Serif">
+<div style="background-image: url('login.jpg');">
+<center>
+
+<fieldset style="margin-right: 200px; margin-left: 200px;">
+
+<legend align="center"><h2 style="color:white">Student Registration Form</h2></legend>
+
+<form style="color:white" onsubmit="success()">
+<br/>
+<label>Name :</label>
+<input type="text" placeholder="Enter your name" name="name" required>
+<br/><br/>
+<label>Father's Name :</label><input type="text" placeholder="Enter your father's name" name="f_name">
+<br/><br/>
+<label>Last Name :</label><input type="text" placeholder="Enter your last name" name="last_name">
+<br/><br/>
+<label>Mother's Name :</label><input type="text" placeholder="Enter your mother's name" name="m_name">
+<br/><br/>
+<label>Phone Number :</label><input type="text" maxlength="10" name="p_num">
+<br/><br/>
+<label>Email :</label><input type="email" placeholder="example@mail.com" name="email">
+<br/><br/>
+<label>Gender :</label>
+<input type="radio" name="gender1" checked>Male &nbsp &nbsp
+<input type="radio" name="gender2">Female
+<br/><br/>
+<label>Date of birth :</label><input type="text" min="1990/1/1" max="2002/1/1" name="dob" required>
+<br/><br/>
+<label>Address :</label>
+&nbsp<textarea cols="20" rows="5" name="add"></textarea>
+<br/><br/>
+<label>Blood Group :</label> 
+<select>  
+<option name="a+">A +ve</option>  
+<option name="b+">B +ve</option>  
+<option name="o+">0 +ve</option>  
+<option name="a-">A -ve</option>  
+<option name="b-">B -ve</option>
+<option name="o-">0 -ve</option>
+</select> 
+<br/><br/>
+<label>Department :</label>
+<input type="radio" name="dep1" 	>
+	<label>CSE</label> &nbsp &nbsp
+<input type="radio" name="dep2">
+	<label>EEE<label> &nbsp &nbsp
+<input type="radio" name="dep3">
+	<label>BBA</label>
+<br/><br/>
+
+<label>Course :</label> <input type="checkbox" >C &nbsp&nbsp
+<input type="checkbox" name="checkbox1">C++ &nbsp&nbsp
+<input type="checkbox" name="checkbox2">Java &nbsp&nbsp
+<input type="checkbox" name="checkbox3">AI &nbsp&nbsp
+</br></br>
+ 
+</form>
+<input type="submit" style="border-radius: 20px; height: 50px; width: 100px; " name='submit' value="Submit"/>  
+<input type="button" style="border-radius: 20px; height: 50px; width: 100px;" value="Cancel"/>  
+
+</fieldset>
+</center>
+
+</form>
+<script>
+	function success() {
+		alert("Form submitted successfully.") ;
+	}
+</script>
+</body>
+</html>
